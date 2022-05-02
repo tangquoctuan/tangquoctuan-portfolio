@@ -112,12 +112,13 @@ const Navbar = props => {
                 {/*<NextLink href="/posts" passHref>*/}
                 {/*  <MenuItem as={Link}>Posts</MenuItem>*/}
                 {/*</NextLink>*/}
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/tangquoctuan/tangquoctuan-portfolio"
-                >
-                  View Source
-                </MenuItem>
+                <NextLink href="https://github.com/tangquoctuan/tangquoctuan-portfolio" passHref>
+                  <MenuItem
+                    as={Link}
+                  >
+                    View Source
+                  </MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>

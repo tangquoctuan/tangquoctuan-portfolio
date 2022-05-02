@@ -100,10 +100,10 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection>
-          <BioYear>1990</BioYear>
-          Born Ho Chi Minh, Vietnam.
-        </BioSection>
+        {/*<BioSection>*/}
+        {/*  <BioYear>1990</BioYear>*/}
+        {/*  Born Ho Chi Minh, Vietnam.*/}
+        {/*</BioSection>*/}
         <BioSection>
           <BioYear>2012</BioYear>
           Completed the HIGHER DIPLOMA IN SOFTWARE ENGINEERING
