@@ -5,10 +5,9 @@ import {
   Heading,
   Box,
   Button,
-  List,
-  ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  SimpleGrid
 } from '@chakra-ui/react'
 // import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -16,7 +15,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -139,8 +138,8 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
-        <List>
-          <ListItem>
+        <SimpleGrid columns={[1, 2, 3]} gap={2}>
+          <Section mb={0}>
             <Link href="https://github.com/tangquoctuan" target="_blank">
               <Button
                 variant="ghost"
@@ -150,19 +149,8 @@ const Home = () => (
                 @tangquoctuan
               </Button>
             </Link>
-          </ListItem>
-          {/*<ListItem>*/}
-          {/*  <Link href="https://twitter.com/inkdrop_app" target="_blank">*/}
-          {/*    <Button*/}
-          {/*      variant="ghost"*/}
-          {/*      colorScheme="teal"*/}
-          {/*      leftIcon={<IoLogoTwitter />}*/}
-          {/*    >*/}
-          {/*      @inkdrop_app (English)*/}
-          {/*    </Button>*/}
-          {/*  </Link>*/}
-          {/*</ListItem>*/}
-          <ListItem>
+          </Section>
+          <Section mb={0}>
             <Link href="https://twitter.com/tangquoctuan" target="_blank">
               <Button
                 variant="ghost"
@@ -172,19 +160,19 @@ const Home = () => (
                 @tangquoctuan
               </Button>
             </Link>
-          </ListItem>
-          {/*<ListItem>*/}
-          {/*  <Link href="https://instagram.com/craftzdog" target="_blank">*/}
-          {/*    <Button*/}
-          {/*      variant="ghost"*/}
-          {/*      colorScheme="teal"*/}
-          {/*      leftIcon={<IoLogoInstagram />}*/}
-          {/*    >*/}
-          {/*      @craftzdog*/}
-          {/*    </Button>*/}
-          {/*  </Link>*/}
-          {/*</ListItem>*/}
-        </List>
+          </Section>
+          <Section mb={0}>
+            <Link href="https://www.linkedin.com/in/tang-quoc-tuan-060b3697/" target="_blank">
+              <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+              >
+                @tangquoctuan
+              </Button>
+            </Link>
+          </Section>
+        </SimpleGrid>
 
         {/*<SimpleGrid columns={[1, 2, 2]} gap={6}>*/}
         {/*  <GridItem*/}

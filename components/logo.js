@@ -35,7 +35,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Tăng Quốc Tuấn
+            Home
           </Text>
         </LogoBox>
       </a>
