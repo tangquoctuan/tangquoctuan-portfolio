@@ -74,9 +74,9 @@ const Navbar = props => {
           {/*<LinkItem href="/works" path={path}>*/}
           {/*  Works*/}
           {/*</LinkItem>*/}
-          {/*<LinkItem href="/posts" path={path}>*/}
-          {/*  Posts*/}
-          {/*</LinkItem>*/}
+          <LinkItem href="https://tangquoctuan.github.io/" path={path}>
+            Curriculum vitae
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/tangquoctuan/tangquoctuan-portfolio"
@@ -106,9 +106,14 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                {/*<NextLink href="/works" passHref>*/}
-                {/*  <MenuItem as={Link}>Works</MenuItem>*/}
-                {/*</NextLink>*/}
+                <NextLink href="https://tangquoctuan.github.io/" passHref>
+                  <MenuItem
+                      as={Link}
+                      target="_blank"
+                  >
+                    Curriculum vitae
+                  </MenuItem>
+                </NextLink>
                 {/*<NextLink href="/posts" passHref>*/}
                 {/*  <MenuItem as={Link}>Posts</MenuItem>*/}
                 {/*</NextLink>*/}
