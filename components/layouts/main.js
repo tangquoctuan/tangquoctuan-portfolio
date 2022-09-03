@@ -18,18 +18,18 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Tuan's homepage" />
         <meta name="author" content="Takuya Matsuyama" />
         <meta name="author" content="craftzdog" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:title" content="Tang Quoc Tuan" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
+        <meta name="twitter:site" content="@tangquoctuan" />
+        <meta name="twitter:creator" content="@tangquoctuan" />
+        <meta name="twitter:image" content="https://twitter.com/tangquoctuan/photo" />
         <meta property="og:site_name" content="Tang Quoc Tuan" />
         <meta name="og:title" content="Tang Quoc Tuan" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <title>Tang Quoc Tuan - Homepage</title>
+        <meta property="og:image" content="https://twitter.com/tangquoctuan/photo" />
+        <title>Tăng Quốc Tuấn - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
